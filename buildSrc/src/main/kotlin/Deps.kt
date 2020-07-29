@@ -36,6 +36,7 @@ object Ktor {
     const val serialization             = "io.ktor:ktor-serialization:$Ver"
     const val logging                   = "io.ktor:ktor-client-logging:$Ver"
     const val logging_jvm               = "io.ktor:ktor-client-logging-jvm:$Ver"
+    const val client_android            = "io.ktor:ktor-client-android:$Ver"
 }
 
 object Kotlin{
