@@ -24,7 +24,7 @@ object Versions {
 
 }
 object Ktor {
-    const val Ver                       = "1.3.2"
+    const val Ver                       = "1.4.1"
     const val client_okhttp             = "io.ktor:ktor-client-okhttp:$Ver"
     const val client_json               = "io.ktor:ktor-client-json:$Ver"
     const val client_gson               = "io.ktor:ktor-client-gson:$Ver"
@@ -40,20 +40,21 @@ object Ktor {
 }
 
 object Kotlin{
-    const val Ver                    = "1.3.72"
+    const val Ver                    = "1.4.10"
     const val jvm                    = "org.jetbrains.kotlin.jvm:$Ver"
     const val stdlib                 = "org.jetbrains.kotlin:kotlin-stdlib:$Ver"
     const val stdlib_jdk8            = "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$Ver"
     const val gradle_plugin          = "org.jetbrains.kotlin:kotlin-gradle-plugin:$Ver"
-    const val serialization_runtime  = "org.jetbrains.kotlinx:kotlinx-serialization-runtime:0.20.0"
-    const val coroutines_core        = "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.7"
-    const val coroutines_android     = "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.7"
+    const val serialization_core     = "org.jetbrains.kotlinx:kotlinx-serialization-core:1.0.0"
+    const val serialization_json     = "org.jetbrains.kotlinx:kotlinx-serialization-json:1.0.0"
+    const val coroutines_core        = "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.9"
+    const val coroutines_android     = "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.9"
     const val reflect                = "org.jetbrains.kotlin:kotlin-reflect:$Ver"
 }
 
 object Androidx{
-    const val core_ktx                 = "androidx.core:core-ktx:1.3.0"
-    const val appcompat                = "androidx.appcompat:appcompat:1.1.0"
+    const val core_ktx                 = "androidx.core:core-ktx:1.3.1"
+    const val appcompat                = "androidx.appcompat:appcompat:1.2.0"
     const val test_junit               = "androidx.test.ext:junit:1.1.1"
     const val test_espresso            = "androidx.test.espresso:espresso-core:3.2.0"
 
@@ -74,20 +75,22 @@ object klogger{
 }
 
 object JCompose{
-    const val jcompose    = "0.1.0-dev14"
-    const val layout      = "androidx.ui:ui-layout:$jcompose"
-    const val material    = "androidx.ui:ui-material:$jcompose"
+    const val jcompose    = "1.0.0-alpha05"
+    const val layout      = "androidx.compose.foundation:foundation-layout:$jcompose"
+    const val foundation  = "androidx.compose.foundation:foundation:$jcompose"
+    const val material    = "androidx.compose.material:material:$jcompose"
     const val tooling     = "androidx.ui:ui-tooling:$jcompose"
-    const val foundations = "androidx.ui:ui-foundation:$jcompose"
-    const val rontime     = "androidx.compose:compose-runtime:$jcompose"
+    const val ui          = "androidx.compose.ui:ui:$jcompose"
+    const val runtime     = "androidx.compose.runtime:runtime:$jcompose"
     const val compiler    = "androidx.compose:compose-compiler:$jcompose"
     const val text_core   = "androidx.ui:ui-text-core:$jcompose"
 
 }
 
 object google{
-    const val cloud_storage            = "com.google.cloud:google-cloud-storage:1.111.1"
-    const val google_android_material  = "com.google.android.material:material:1.1.0"
+    const val cloud_storage            = "com.google.cloud:google-cloud-storage:1.113.1"
+    const val cloud_logging            = "com.google.cloud:google-cloud-logging-logback:0.118.2-alpha"
+    const val google_android_material  = "com.google.android.material:material:1.2.1"
     const val gson                     = "com.google.code.gson:gson:2.8.6"
 }
 
@@ -99,7 +102,7 @@ object BuildPluginsVersion {
     const val VERSIONS_PLUGIN = "0.28.0"
     const val SERIALIZATION="1.3.70"
     const val com_android_tools = "com.android.tools.build:gradle:4.2.0-alpha04"
-    const val manes_versions    = "com.github.ben-manes.versions:0.29.0"
+    const val manes_versions    = "com.github.ben-manes.versions:0.31.0"
 }
 
 object TestingLib {
@@ -109,7 +112,7 @@ object TestingLib {
 
 
 object DebugImplementation{
-    const val leakcanary_android="com.squareup.leakcanary:leakcanary-android:2.4"
+    const val leakcanary_android="com.squareup.leakcanary:leakcanary-android:2.5"
 }
 
 object test{

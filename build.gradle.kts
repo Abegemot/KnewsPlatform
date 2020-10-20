@@ -1,8 +1,9 @@
+
+
 plugins {
     `java-platform`
     `maven-publish`
-
-        id("com.github.ben-manes.versions") version "0.29.0"
+    //id("com.github.ben-manes.versions") version "0.33.0"
 
 }
 
@@ -19,7 +20,8 @@ dependencies {
        api( Kotlin.jvm)
        api(Kotlin.stdlib_jdk8)
        api(Kotlin.reflect)
-       api(Kotlin.serialization_runtime)
+       api(Kotlin.serialization_core)
+       api(Kotlin.serialization_json)
        api(Ktor.client_serialization_jvm)
        api(Ktor.client_okhttp)
        api(Ktor.client_gson)
@@ -34,10 +36,11 @@ dependencies {
        api(Ktor.client_android)
 
        api(JCompose.compiler)
-       api(JCompose.foundations)
+       api(JCompose.ui)
+       api(JCompose.foundation)
        api(JCompose.layout)
        api(JCompose.material)
-       api(JCompose.rontime)
+       api(JCompose.runtime)
        api(JCompose.text_core)
        api(JCompose.tooling)
 
@@ -55,6 +58,7 @@ dependencies {
        api(Kotlin.gradle_plugin)
        api(google.google_android_material)
        api(google.gson)
+       api(google.cloud_logging)
        api(sun.mail)
        api(sun.mail_activation)
        api(DebugImplementation.leakcanary_android)
