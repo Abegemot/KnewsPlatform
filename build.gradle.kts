@@ -22,6 +22,7 @@ dependencies {
        api(Kotlin.reflect)
        api(Kotlin.serialization_core)
        api(Kotlin.serialization_json)
+
        api(Ktor.client_serialization_jvm)
        api(Ktor.client_okhttp)
        api(Ktor.client_gson)
@@ -34,6 +35,7 @@ dependencies {
        api(Ktor.logging)
        api(Ktor.logging_jvm)
        api(Ktor.client_android)
+       api(Ktor.client_encoding)
 
        api(JCompose.compiler)
        api(JCompose.ui)
@@ -49,10 +51,12 @@ dependencies {
        api(google.cloud_storage)
        api(klogger.logback_clasic)
        api(klogger.timber)
+       api(klogger.kotlin_logging_jvm)
        api(Androidx.core_ktx)
        api(Androidx.appcompat)
        api(Androidx.test_junit)
        api(Androidx.test_espresso)
+       api(Androidx.view_model_scope)
        api(Kotlin.coroutines_core)
        api(Kotlin.coroutines_android)
        api(Kotlin.gradle_plugin)
