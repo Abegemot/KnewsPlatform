@@ -39,6 +39,7 @@ dependencies {
 
        api(JCompose.compiler)
        api(JCompose.ui)
+       api(JCompose.uiutil)
        api(JCompose.foundation)
        api(JCompose.layout)
        api(JCompose.material)
@@ -66,7 +67,10 @@ dependencies {
        api(sun.mail)
        api(sun.mail_activation)
        api(DebugImplementation.leakcanary_android)
-       api(test.junit)
+       //api(test.junit)
+       api(TestingLib.junit)
+       api(TestingLib.test_expreso)
+       api(TestingLib.test_ext_Junit)
        api(BuildPluginsVersion.manes_versions)  //classpath)
 
    }

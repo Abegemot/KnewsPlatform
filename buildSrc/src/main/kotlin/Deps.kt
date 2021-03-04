@@ -24,7 +24,7 @@ object Versions {
 
 }
 object Ktor {
-    const val Ver                       = "1.5.0"
+    const val Ver                       = "1.5.2"
     const val client_okhttp             = "io.ktor:ktor-client-okhttp:$Ver"
     const val client_json               = "io.ktor:ktor-client-json:$Ver"
     const val client_gson               = "io.ktor:ktor-client-gson:$Ver"
@@ -41,13 +41,13 @@ object Ktor {
 }
 
 object Kotlin{
-    const val Ver                    = "1.4.21"
+    const val Ver                    = "1.4.30"
     const val jvm                    = "org.jetbrains.kotlin.jvm:$Ver"
     const val stdlib                 = "org.jetbrains.kotlin:kotlin-stdlib:$Ver"
     const val stdlib_jdk8            = "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$Ver"
     const val gradle_plugin          = "org.jetbrains.kotlin:kotlin-gradle-plugin:$Ver"
-    const val serialization_core     = "org.jetbrains.kotlinx:kotlinx-serialization-core:1.0.1"
-    const val serialization_json     = "org.jetbrains.kotlinx:kotlinx-serialization-json:1.0.1"
+    const val serialization_core     = "org.jetbrains.kotlinx:kotlinx-serialization-core:1.1.0"
+    const val serialization_json     = "org.jetbrains.kotlinx:kotlinx-serialization-json:1.1.0"
     const val coroutines_core        = "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.4.2"
     const val coroutines_android     = "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.2"
     const val reflect                = "org.jetbrains.kotlin:kotlin-reflect:$Ver"
@@ -62,8 +62,8 @@ object Androidx{
 }
 
 object sun{
-    const val mail            = "com.sun.mail:android-mail:1.6.5"
-    const val mail_activation = "com.sun.mail:android-activation:1.6.5"
+    const val mail            = "com.sun.mail:android-mail:1.6.6"
+    const val mail_activation = "com.sun.mail:android-activation:1.6.6"
 }
 
 object jsoup{
@@ -77,12 +77,13 @@ object klogger{
 }
 
 object JCompose{
-    const val jcompose    = "1.0.0-alpha09"
+    const val jcompose    = "1.0.0-beta01"
     const val layout      = "androidx.compose.foundation:foundation-layout:$jcompose"
     const val foundation  = "androidx.compose.foundation:foundation:$jcompose"
     const val material    = "androidx.compose.material:material:$jcompose"
     const val tooling     = "androidx.compose.ui:ui-tooling:$jcompose"
     const val ui          = "androidx.compose.ui:ui:$jcompose"
+    const val uiutil      = "androidx.compose.ui:ui-util:$jcompose"
     const val runtime     = "androidx.compose.runtime:runtime:$jcompose"
     const val compiler    = "androidx.compose.compiler:compiler:$jcompose"
     const val text_core   = "androidx.ui:ui-text-core:$jcompose"
@@ -92,7 +93,7 @@ object JCompose{
 object google{
     const val cloud_storage            = "com.google.cloud:google-cloud-storage:1.113.6"
     const val cloud_logging            = "com.google.cloud:google-cloud-logging-logback:0.118.2-alpha"
-    const val google_android_material  = "com.google.android.material:material:1.2.1"
+    const val google_android_material  = "com.google.android.material:material:1.3.0"
     const val gson                     = "com.google.code.gson:gson:2.8.6"
 }
 
@@ -108,8 +109,11 @@ object BuildPluginsVersion {
 }
 
 object TestingLib {
-    const val JUNIT = "junit:junit:${Versions.JUNIT}"
+    const val junit = "junit:junit:4.13.2"
+    const val test_ext_Junit = "androidx.test.ext:junit:1.1.2"
+    const val test_expreso = "androidx.test.espresso:espresso-core:3.3.0"
 }
+
 //OE OE
 
 
@@ -117,6 +121,6 @@ object DebugImplementation{
     const val leakcanary_android="com.squareup.leakcanary:leakcanary-android:2.6"
 }
 
-object test{
-    const val junit = "junit:junit:4.12"
-}
+//object test {
+//    const val junit = "junit:junit:4.13.2"
+//}
