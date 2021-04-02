@@ -22,6 +22,8 @@ dependencies {
        api(Kotlin.reflect)
        api(Kotlin.serialization_core)
        api(Kotlin.serialization_json)
+       api(Kotlin.activity_compose)
+       api(Kotlin.activity_compose2)
 
        api(Ktor.client_serialization_jvm)
        api(Ktor.client_okhttp)
@@ -58,6 +60,7 @@ dependencies {
        api(Androidx.test_junit)
        api(Androidx.test_espresso)
        api(Androidx.view_model_scope)
+       api(Androidx.lifecycle_runtime)
        api(Kotlin.coroutines_core)
        api(Kotlin.coroutines_android)
        api(Kotlin.gradle_plugin)
