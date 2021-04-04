@@ -1,7 +1,7 @@
 
 
 object Ktor {
-    const val Ver                       = "1.5.2"
+    const val Ver                       = "1.5.3"
     const val client_okhttp             = "io.ktor:ktor-client-okhttp:1.5.1"
     const val client_json               = "io.ktor:ktor-client-json:$Ver"
     const val client_gson               = "io.ktor:ktor-client-gson:$Ver"
@@ -100,7 +100,7 @@ object TestingLib {
 
 
 object DebugImplementation{
-    const val leakcanary_android="com.squareup.leakcanary:leakcanary-android:2.6"
+    const val leakcanary_android="com.squareup.leakcanary:leakcanary-android:2.7"
 }
 
 //object test {
