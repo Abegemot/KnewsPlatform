@@ -1,8 +1,9 @@
 
 
 object Ktor {
-    const val Ver                       = "1.5.3"
-    const val client_okhttp             = "io.ktor:ktor-client-okhttp:1.5.1"
+    const val Ver                       = "1.6.0"
+    const val client_okhttp             = "io.ktor:ktor-client-okhttp:$Ver"
+    const val client_cio                = "io.ktor:ktor-client-cio:$Ver"
     const val client_json               = "io.ktor:ktor-client-json:$Ver"
     const val client_gson               = "io.ktor:ktor-client-gson:$Ver"
     const val client_serialization_jvm  = "io.ktor:ktor-client-serialization-jvm:$Ver"
@@ -17,19 +18,31 @@ object Ktor {
     const val client_encoding           = "io.ktor:ktor-client-encoding:$Ver"
 }
 
+object grpc{
+    const val kotlin_stub   = "io.grpc:grpc-kotlin-stub:1.1.0"
+    const val protobuf_lite = "io.grpc:grpc-protobuf-lite:1.38.0"
+    const val android       = "io.grpc:grpc-android:1.38.0"
+    const val okhttp        = "io.grpc:grpc-okhttp:1.38.0"
+    const val gen_grpc_java = "io.grpc:protoc-gen-grpc-java:1.38.0"
+    const val protoc        = "com.google.protobuf:protoc:3.16.0"
+
+}
+
 object Kotlin{
-    const val Ver                    = "1.4.31"
+    const val Ver                    = "1.5.10"
     const val jvm                    = "org.jetbrains.kotlin.jvm:$Ver"
     const val stdlib                 = "org.jetbrains.kotlin:kotlin-stdlib:$Ver"
     const val stdlib_jdk8            = "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$Ver"
+    const val stdlib_jdk7            = "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$Ver"
+
     const val gradle_plugin          = "org.jetbrains.kotlin:kotlin-gradle-plugin:$Ver"
-    const val serialization_core     = "org.jetbrains.kotlinx:kotlinx-serialization-core:1.1.0"
-    const val serialization_json     = "org.jetbrains.kotlinx:kotlinx-serialization-json:1.1.0"
-    const val coroutines_core        = "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.4.3"
-    const val coroutines_android     = "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.3"
+    const val serialization_core     = "org.jetbrains.kotlinx:kotlinx-serialization-core:1.2.1"
+    const val serialization_json     = "org.jetbrains.kotlinx:kotlinx-serialization-json:1.2.1"
+    const val coroutines_core        = "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.0"
+    const val coroutines_android     = "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.0"
     const val reflect                = "org.jetbrains.kotlin:kotlin-reflect:$Ver"
-    const val activity_compose       = "androidx.activity:activity-compose:1.3.0-alpha04"
-    const val activity_compose2      = "androidx.activity:activity-ktx:1.3.0-alpha04"
+    const val activity_compose       = "androidx.activity:activity-compose:1.3.0-alpha07"
+    const val activity_compose2      = "androidx.activity:activity-ktx:1.3.0-alpha07"
 
 }
 
@@ -44,8 +57,8 @@ object Androidx{
 }
 
 object sun{
-    const val mail            = "com.sun.mail:android-mail:1.6.6"
-    const val mail_activation = "com.sun.mail:android-activation:1.6.6"
+    const val mail            = "com.sun.mail:android-mail:1.6.7"
+    const val mail_activation = "com.sun.mail:android-activation:1.6.7"
 }
 
 object jsoup{
@@ -55,11 +68,11 @@ object jsoup{
 object klogger{
     const val logback_clasic = "ch.qos.logback:logback-classic:1.2.3"
     const val timber         = "com.jakewharton.timber:timber:4.7.1"
-    const val kotlin_logging_jvm = "io.github.microutils:kotlin-logging-jvm:2.0.6"
+    const val kotlin_logging_jvm = "io.github.microutils:kotlin-logging-jvm:2.0.8"
 }
 
 object JCompose{
-    const val jcompose    = "1.0.0-beta03"
+    const val jcompose    = "1.0.0-beta09"
     const val layout      = "androidx.compose.foundation:foundation-layout:$jcompose"
     const val foundation  = "androidx.compose.foundation:foundation:$jcompose"
     const val material    = "androidx.compose.material:material:$jcompose"
@@ -73,7 +86,7 @@ object JCompose{
 }
 
 object google{
-    const val cloud_storage            = "com.google.cloud:google-cloud-storage:1.113.14"
+    const val cloud_storage            = "com.google.cloud:google-cloud-storage:1.116.0"
     const val cloud_logging            = "com.google.cloud:google-cloud-logging-logback:0.120.3-alpha"
     const val google_android_material  = "com.google.android.material:material:1.3.0"
     const val gson                     = "com.google.code.gson:gson:2.8.6"

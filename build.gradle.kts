@@ -19,6 +19,7 @@ dependencies {
    constraints{
        api( Kotlin.jvm)
        api(Kotlin.stdlib_jdk8)
+       api(Kotlin.stdlib_jdk7)
        api(Kotlin.reflect)
        api(Kotlin.serialization_core)
        api(Kotlin.serialization_json)
@@ -27,6 +28,7 @@ dependencies {
 
        api(Ktor.client_serialization_jvm)
        api(Ktor.client_okhttp)
+       api(Ktor.client_cio)
        api(Ktor.client_gson)
        api(Ktor.client_json)
        api(Ktor.server_netty)
@@ -76,6 +78,12 @@ dependencies {
        api(TestingLib.test_ext_Junit)
        api(BuildPluginsVersion.manes_versions)  //classpath)
 
+       api(grpc.android)
+       api(grpc.kotlin_stub)
+       api(grpc.okhttp)
+       api(grpc.protobuf_lite)
+       api(grpc.gen_grpc_java)
+       api(grpc.protoc)
    }
 }
 
