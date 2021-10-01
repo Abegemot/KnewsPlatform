@@ -1,7 +1,7 @@
 
 
 object Ktor {
-    const val Ver                       = "1.6.0"
+    const val Ver                       = "1.6.4"
     const val client_okhttp             = "io.ktor:ktor-client-okhttp:$Ver"
     const val client_cio                = "io.ktor:ktor-client-cio:$Ver"
     const val client_json               = "io.ktor:ktor-client-json:$Ver"
@@ -29,20 +29,20 @@ object grpc{
 }
 
 object Kotlin{
-    const val Ver                    = "1.5.10"
+    const val Ver                    = "1.5.30"
     const val jvm                    = "org.jetbrains.kotlin.jvm:$Ver"
     const val stdlib                 = "org.jetbrains.kotlin:kotlin-stdlib:$Ver"
     const val stdlib_jdk8            = "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$Ver"
     const val stdlib_jdk7            = "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$Ver"
 
     const val gradle_plugin          = "org.jetbrains.kotlin:kotlin-gradle-plugin:$Ver"
-    const val serialization_core     = "org.jetbrains.kotlinx:kotlinx-serialization-core:1.2.1"
-    const val serialization_json     = "org.jetbrains.kotlinx:kotlinx-serialization-json:1.2.1"
-    const val coroutines_core        = "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.0"
-    const val coroutines_android     = "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.0"
+    const val serialization_core     = "org.jetbrains.kotlinx:kotlinx-serialization-core:1.3.0"
+    const val serialization_json     = "org.jetbrains.kotlinx:kotlinx-serialization-json:1.3.0"
+    const val coroutines_core        = "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.2"
+    const val coroutines_android     = "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.2"
     const val reflect                = "org.jetbrains.kotlin:kotlin-reflect:$Ver"
-    const val activity_compose       = "androidx.activity:activity-compose:1.3.0-alpha07"
-    const val activity_compose2      = "androidx.activity:activity-ktx:1.3.0-alpha07"
+    const val activity_compose       = "androidx.activity:activity-compose:1.3.1"
+    const val activity_compose2      = "androidx.activity:activity-ktx:1.3.1"
 
 }
 
@@ -51,8 +51,9 @@ object Androidx{
     const val appcompat                = "androidx.appcompat:appcompat:1.2.0"
     const val test_junit               = "androidx.test.ext:junit:1.1.1"
     const val test_espresso            = "androidx.test.espresso:espresso-core:3.2.0"
-    const val view_model_scope         = "androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.0"
-    const val lifecycle_runtime        = "androidx.lifecycle:lifecycle-runtime-ktx:2.3.0"
+    const val view_model_scope         = "androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1"
+    const val lifecycle_runtime        = "androidx.lifecycle:lifecycle-runtime-ktx:2.3.1"
+    const val datastore_preferences    = "androidx.datastore:datastore-preferences:1.0.0"
 
 }
 
@@ -62,21 +63,23 @@ object sun{
 }
 
 object jsoup{
-    const val jsoup="org.jsoup:jsoup:1.13.1"
+    const val jsoup="org.jsoup:jsoup:1.14.3"
 }
 
 object klogger{
     const val logback_clasic = "ch.qos.logback:logback-classic:1.2.3"
-    const val timber         = "com.jakewharton.timber:timber:4.7.1"
-    const val kotlin_logging_jvm = "io.github.microutils:kotlin-logging-jvm:2.0.8"
+    const val timber         = "com.jakewharton.timber:timber:5.0.1"
+    const val kotlin_logging_jvm = "io.github.microutils:kotlin-logging-jvm:2.0.11"
 }
 
 object JCompose{
-    const val jcompose    = "1.0.0-beta09"
+    const val jcompose    = "1.0.3"
     const val layout      = "androidx.compose.foundation:foundation-layout:$jcompose"
     const val foundation  = "androidx.compose.foundation:foundation:$jcompose"
     const val material    = "androidx.compose.material:material:$jcompose"
     const val tooling     = "androidx.compose.ui:ui-tooling:$jcompose"
+    const val uitooldata  = "androidx.compose.ui:ui-tooling-data:$jcompose"
+    const val preview     = "androidx.compose.ui:ui-tooling-preview:$jcompose"
     const val ui          = "androidx.compose.ui:ui:$jcompose"
     const val uiutil      = "androidx.compose.ui:ui-util:$jcompose"
     const val runtime     = "androidx.compose.runtime:runtime:$jcompose"
@@ -86,8 +89,8 @@ object JCompose{
 }
 
 object google{
-    const val cloud_storage            = "com.google.cloud:google-cloud-storage:1.116.0"
-    const val cloud_logging            = "com.google.cloud:google-cloud-logging-logback:0.120.3-alpha"
+    const val cloud_storage            = "com.google.cloud:google-cloud-storage:2.1.6"
+    const val cloud_logging            = "com.google.cloud:google-cloud-logging-logback:0.122.1-alpha"
     const val google_android_material  = "com.google.android.material:material:1.3.0"
     const val gson                     = "com.google.code.gson:gson:2.8.6"
 }

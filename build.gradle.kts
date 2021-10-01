@@ -50,6 +50,8 @@ dependencies {
        api(JCompose.runtime)
        api(JCompose.text_core)
        api(JCompose.tooling)
+       api(JCompose.uitooldata)
+       api(JCompose.preview)
 
 
        api(jsoup.jsoup)
@@ -57,12 +59,15 @@ dependencies {
        api(klogger.logback_clasic)
        api(klogger.timber)
        api(klogger.kotlin_logging_jvm)
+
        api(Androidx.core_ktx)
        api(Androidx.appcompat)
        api(Androidx.test_junit)
        api(Androidx.test_espresso)
        api(Androidx.view_model_scope)
        api(Androidx.lifecycle_runtime)
+       api(Androidx.datastore_preferences)
+
        api(Kotlin.coroutines_core)
        api(Kotlin.coroutines_android)
        api(Kotlin.gradle_plugin)
