@@ -50,6 +50,7 @@ dependencies {
        api(JCompose.runtime)
        api(JCompose.text_core)
        api(JCompose.tooling)
+       api(JCompose.exticons)
        api(JCompose.uitooldata)
        api(JCompose.preview)
 
@@ -74,6 +75,8 @@ dependencies {
        api(google.google_android_material)
        api(google.gson)
        api(google.cloud_logging)
+       api(google.play_core)
+       api(google.play_corektx)
        api(sun.mail)
        api(sun.mail_activation)
        api(DebugImplementation.leakcanary_android)
